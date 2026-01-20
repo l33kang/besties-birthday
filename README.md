@@ -1,8 +1,8 @@
-# [Happy Birthday, Orly!](https://hb-orly-server.onrender.com)
+# [Happy Birthday, Sarro!](https://hb-sarro-server.onrender.com)
 
-Simple HTML5 game created for the birthday of my beloved girlfriend Orly.  
+Simple HTML5 game created for the birthday of my beloved girlfriend Sarro.  
 Built with [Phaser 3](https://phaser.io/phaser3) game framework.  
-[Enjoy!](https://hb-orly-server.onrender.com)
+[Enjoy!](https://hb-sarro-server.onrender.com)
 
 # Setup
 

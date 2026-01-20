@@ -22,7 +22,7 @@ export class Player {
 		jump: PhAnimation;
 		fall: PhAnimation;
 	};
-	private spriteKey: string = 'orly';
+	private spriteKey: string = 'sarro';
 	private movementSpeed: number = 300;
 	private jumpPower: number = 670;
 	private jumpVelocityX: number = 1;

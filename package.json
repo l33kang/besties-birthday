@@ -1,18 +1,15 @@
 {
-	"name": "happy-birthday-orly",
+	"name": "happy-birthday-sarro",
 	"version": "1.0.0",
-	"description": "Simple HTML5 game created for the birthday of my beloved girlfriend Orly.",
-	"author": "alexeychikk",
+	"description": "Simple HTML5 game created for the birthday of my beloved bestfriend Sarro.",
+	"author": "ali",
 	"main": "src/game.ts",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/alexeychikk/happy-birthday-orly"
-	},
 	"scripts": {
 		"start": "webpack-dev-server --config webpack/webpack.dev.js",
 		"start:local": "webpack-dev-server --config webpack/webpack.local.js",
 		"build": "webpack --config webpack/webpack.prod.js",
-		"server": "pm2-runtime start ecosystem.config.js --env production"
+		"server": "pm2-runtime start ecosystem.config.js --env production",
+		"dev": "node --watch --env-file=.env server.js"
 	},
 	"engines": {
 		"node": "10.x"
