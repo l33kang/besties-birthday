@@ -43,12 +43,10 @@ module.exports = {
 				minifyJS: true
 			}
 		}),
-		new CopyWebpackPlugin({
-			patterns: [
-				{ from: 'src/assets', to: 'assets' },
-				{ from: 'src/pwa', to: '' },
-				{ from: 'src/favicon.ico', to: '' }
-			]
-		})
+		new CopyWebpackPlugin([
+			{ from: 'src/assets', to: 'assets' },
+			{ from: 'src/pwa', to: '' },
+			{ from: 'src/favicon.ico', to: '' }
+		])
 	]
 };
