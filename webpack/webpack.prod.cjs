@@ -4,7 +4,7 @@ const path = require('path');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.cjs');
 const JavaScriptObfuscator = require('webpack-obfuscator');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
 const prod = {
@@ -22,7 +22,7 @@ const prod = {
 		}
 	},
 	plugins: [
-		new CleanWebpackPlugin(),
+
 		new JavaScriptObfuscator(
 			{
 				rotateStringArray: true,
