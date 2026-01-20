@@ -4,6 +4,7 @@
 	"description": "Simple HTML5 game created for the birthday of my beloved bestfriend Sarro.",
 	"author": "ali",
 	"main": "src/game.ts",
+	"type": "module",
 	"scripts": {
 		"start": "node server.js",
 		"start:local": "webpack-dev-server --config webpack/webpack.local.js",
