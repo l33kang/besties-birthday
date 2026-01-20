@@ -75,7 +75,7 @@ export class LoveChest {
 
 	private createFlyingText() {
 		this.flyingText = new FlyingText({
-			text: 'Happy Birthday, Sarrooo!',
+			text: 'Happy Birthday, Sarrooo! ❤️ \n I love you so endlessly! ',
 			style: {
 				fontFamily: 'Arcade',
 				fontSize: '32px',

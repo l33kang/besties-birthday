@@ -29,7 +29,7 @@ const DIALOGS: ILevelDialog[] = [
 		hint: "(?) Come on, You cant't be fr!"
 	},
 	{
-		question: 'How many gifts do you want for your birthday?',
+		question: 'How many gifts do you want for your birthday Sweetlove ^-^ ?',
 		answers: [],
 		type: 'number'
 	}
