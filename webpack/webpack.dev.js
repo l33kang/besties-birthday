@@ -1,14 +1,13 @@
-const merge = require('webpack-merge');
-const common = require('./webpack.common');
+import { merge } from 'webpack-merge';
+import common from './webpack.common.js';
 
 const dev = {
 	mode: 'development',
 	devtool: 'inline-source-map',
 	devServer: {
 		open: true,
-		noInfo: true,
 		port: 8080
 	}
 };
 
-module.exports = merge(common, dev);
+export default merge(common, dev);

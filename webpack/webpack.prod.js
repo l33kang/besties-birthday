@@ -1,11 +1,15 @@
 process.env.NODE_ENV = 'production';
 
-const path = require('path');
-const merge = require('webpack-merge');
-const common = require('./webpack.common');
-const JavaScriptObfuscator = require('webpack-obfuscator');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const { InjectManifest } = require('workbox-webpack-plugin');
+import path from 'path';
+import { merge } from 'webpack-merge';
+import common from './webpack.common.js';
+import JavaScriptObfuscator from 'webpack-obfuscator';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import { InjectManifest } from 'workbox-webpack-plugin';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const prod = {
 	mode: 'production',
@@ -39,4 +43,4 @@ const prod = {
 	]
 };
 
-module.exports = merge(common, prod);
+export default merge(common, prod);

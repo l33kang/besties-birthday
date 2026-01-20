@@ -1,6 +1,6 @@
-const merge = require('webpack-merge');
-const dev = require('./webpack.dev');
-const getLocalIp = require('./getLocalIp');
+import { merge } from 'webpack-merge';
+import dev from './webpack.dev.js';
+import getLocalIp from './getLocalIp.js';
 
 console.log(`Listening on http://${getLocalIp()}:8080`);
 
@@ -10,4 +10,4 @@ const local = {
 	}
 };
 
-module.exports = merge(dev, local);
+export default merge(dev, local);

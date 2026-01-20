@@ -1,8 +1,12 @@
-const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+import path from 'path';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import { fileURLToPath } from 'url';
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default {
 	entry: './src/game.ts',
 	output: {
 		filename: 'game.bundle.js',
@@ -43,10 +47,12 @@ module.exports = {
 				minifyJS: true
 			}
 		}),
-		new CopyWebpackPlugin([
-			{ from: 'src/assets', to: 'assets' },
-			{ from: 'src/pwa', to: '' },
-			{ from: 'src/favicon.ico', to: '' }
-		])
+		new CopyWebpackPlugin({
+			patterns: [
+				{ from: 'src/assets', to: 'assets' },
+				{ from: 'src/pwa', to: '' },
+				{ from: 'src/favicon.ico', to: '' }
+			]
+		})
 	]
 };
