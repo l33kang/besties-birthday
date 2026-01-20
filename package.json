@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Simple HTML5 game created for the birthday of my beloved bestfriend Sarro.",
 	"author": "ali",
-	"main": "src/game.ts",
+	"main": "dist/game.bundle.js",
 	"type": "module",
 	"scripts": {
 		"start": "node server.js",
