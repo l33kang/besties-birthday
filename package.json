@@ -7,7 +7,7 @@
 	"scripts": {
 		"start": "node server.js",
 		"start:local": "webpack-dev-server --config webpack/webpack.local.js",
-		"build": "webpack --config webpack/webpack.prod.js"
+		"build": "webpack --config webpack/webpack.prod.cjs"
 	},
 	"engines": {
 		"node": "18.x"
