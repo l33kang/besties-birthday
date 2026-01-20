@@ -1,5 +1,5 @@
-import { merge } from 'webpack-merge';
-import common from './webpack.common.js';
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
 
 const dev = {
 	mode: 'development',
@@ -10,4 +10,4 @@ const dev = {
 	}
 };
 
-export default merge(common, dev);
+module.exports = merge(common, dev);
