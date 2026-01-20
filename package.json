@@ -5,11 +5,9 @@
 	"author": "ali",
 	"main": "src/game.ts",
 	"scripts": {
-		"start": "webpack-dev-server --config webpack/webpack.dev.js",
+		"start": "node server.js",
 		"start:local": "webpack-dev-server --config webpack/webpack.local.js",
-		"build": "webpack --config webpack/webpack.prod.js",
-		"server": "pm2-runtime start ecosystem.config.js --env production",
-		"dev": "node --watch --env-file=.env server.js"
+		"build": "webpack --config webpack/webpack.prod.js"
 	},
 	"engines": {
 		"node": "18.x"
@@ -36,7 +34,6 @@
 	"dependencies": {
 		"@awaitjs/express": "0.3.0",
 		"express": "4.16.4",
-		"phaser": "3.16.2",
-		"pm2": "3.5.2"
+		"phaser": "3.16.2"
 	}
 }
