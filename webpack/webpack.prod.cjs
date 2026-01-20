@@ -2,7 +2,7 @@ process.env.NODE_ENV = 'production';
 
 const path = require('path');
 const { merge } = require('webpack-merge');
-const common = require('./webpack.common.js');
+const common = require('./webpack.common.cjs');
 const JavaScriptObfuscator = require('webpack-obfuscator');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { InjectManifest } = require('workbox-webpack-plugin');
