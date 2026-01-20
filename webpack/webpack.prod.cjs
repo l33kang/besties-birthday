@@ -1,7 +1,8 @@
+// Fixed imports to force a change
 process.env.NODE_ENV = 'production';
 
 const path = require('path');
-const { merge } = require('webpack-merge');
+const merge = require('webpack-merge');
 const common = require('./webpack.common.cjs');
 const JavaScriptObfuscator = require('webpack-obfuscator');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
