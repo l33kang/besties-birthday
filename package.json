@@ -10,7 +10,7 @@
 		"build": "webpack --config webpack/webpack.prod.cjs"
 	},
 	"engines": {
-		"node": "18.x"
+		"node": "20.x"
 	},
 	"license": "MIT",
 	"devDependencies": {
