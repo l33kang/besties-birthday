@@ -2,7 +2,7 @@
 
 A small interactive birthday game and mobile app that I created as a personal birthday gift for my best friend, Sarro.
 
-The project started from an existing **Phaser 3** HTML5 game project. I customized and extended the original project, fixed issues, added my own content and changes, and created my own version of the birthday experience.
+The project started from an existing Phaser 3 HTML5 game project. I customized and extended the original project, fixed issues, redesigned the main character, added my own content and assets, and created my own version of the birthday experience.
 
 🌐 **Live Web Version:** https://hb-sarro-server.onrender.com/
 
@@ -12,11 +12,13 @@ The project started from an existing **Phaser 3** HTML5 game project. I customiz
 
 This project was created as a personalized birthday experience rather than a traditional website.
 
-The original project provided the basic Phaser 3 game structure. I used it as a starting point and then modified it to create my own version, including changing the game content, fixing problems in the original implementation, and adapting it for my use case.
+The original project provided the basic Phaser 3 game structure. I used it as a starting point and then modified it to create my own version, including changing the game content, fixing problems in the original implementation, redesigning the character, and adapting the experience for my use case.
+
+One of the main parts I customized was the game's character. I **recreated and redesigned the character using Adobe Photoshop**, giving the project its own visual identity rather than keeping the original character unchanged.
 
 The finished project was deployed online using **Render**, where the web version has remained available since I deployed it.
 
-I also created a **mobile app version** of the project so the birthday experience could be used as an Android application.
+I also created a mobile app version of the project so the birthday experience could be used as an Android application.
 
 ---
 
@@ -27,10 +29,11 @@ I also created a **mobile app version** of the project so the birthday experienc
 - **Phaser 3**
 - **Node.js**
 - **npm**
+- **Adobe Photoshop**
 - **Render**
-- **Android / Mobile App**
+- **Android**
 
-Phaser 3 was used as the game framework for the interactive web experience.
+Phaser 3 was used as the game framework for the interactive web experience, while Photoshop was used to recreate and redesign the game's character and visual assets.
 
 ---
 
@@ -40,12 +43,14 @@ Starting from the original Phaser 3 project, I:
 
 - Customized the existing game for my own birthday project.
 - Replaced and modified the original content.
+- **Recreated and redesigned the game character using Adobe Photoshop.**
+- Created and modified visual assets for the customized experience.
 - Fixed issues I encountered while working with the project.
-- Added my own birthday-related experience and assets.
-- Adapted the project into my own version instead of using the original project unchanged.
+- Added my own birthday-related experience and content.
+- Adapted the original project into my own version.
 - Built a mobile version of the application.
 - Configured the project to run as a web application.
-- Deployed the web version to **Render**.
+- Deployed the web version to Render.
 - Kept the application running online after deployment.
 
 ---
@@ -65,8 +70,8 @@ Open it in a browser and enjoy the birthday game.
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
-cd <project-folder>
+git clone https://github.com/l33kang/besties-birthday.git
+cd besties-birthday
 ```
 
 ### 2. Install dependencies
@@ -121,7 +126,7 @@ The server uses:
 process.env.PORT || 5000
 ```
 
-This also makes it suitable for deployment on platforms such as Render where the application port is provided through the `PORT` environment variable.
+This makes it suitable for deployment on platforms such as Render, where the application port is provided through the `PORT` environment variable.
 
 ---
 
@@ -130,6 +135,8 @@ This also makes it suitable for deployment on platforms such as Render where the
 I also created a mobile version of the project based on the customized web game.
 
 The mobile version packages the birthday experience as an Android application so it can be used without opening the web version in a browser.
+
+The Android APK is available in the project's **GitHub Releases**.
 
 ---
 
@@ -169,7 +176,7 @@ The exact structure may differ depending on the version of the project.
 
 The game uses **Phaser 3** as its main game framework.
 
-Phaser handles the interactive game environment, including things such as:
+Phaser handles the interactive game environment, including:
 
 - Game scenes
 - Game objects
@@ -179,9 +186,21 @@ Phaser handles the interactive game environment, including things such as:
 - Rendering
 - Game logic
 
-More information about Phaser can be found at:
+More information about Phaser 3:
 
 https://phaser.io/phaser3
+
+---
+
+## 🎨 Character & Visual Design
+
+The game's main character was not kept in its original form.
+
+I **recreated and redesigned the character in Adobe Photoshop** specifically for my version of the game.
+
+This involved creating the character artwork and adapting the visual assets so they could be used within the Phaser game.
+
+This was one of the main parts of the project where I contributed beyond the original codebase.
 
 ---
 
@@ -197,6 +216,8 @@ The general process was:
 Original Phaser Project
         ↓
 Understand the existing code
+        ↓
+Redesign character & visual assets
         ↓
 Modify the game
         ↓
@@ -225,7 +246,8 @@ Through this project, I gained practical experience with:
 - Managing npm dependencies.
 - Running local development servers.
 - Building production web applications.
-- Serving static game assets.
+- Creating and modifying game assets.
+- Using Adobe Photoshop for game asset design.
 - Working with audio assets.
 - Creating a mobile version of a web project.
 - Deploying applications to Render.
@@ -239,7 +261,7 @@ This wasn't built as a commercial application or university assignment.
 
 I made it as a personal birthday project for someone important to me.
 
-The goal was to create something more personal than simply sending a birthday message—a small interactive experience that could be played and kept as a memory.
+The goal was to create something more personal than simply sending a birthday message — a small interactive experience that could be played and kept as a memory.
 
 ---
 
@@ -247,7 +269,7 @@ The goal was to create something more personal than simply sending a birthday me
 
 This project was **based on an existing Phaser 3 birthday-game project**.
 
-The original project provided the foundation, while this version contains my own modifications, fixes, customization, content, and deployment.
+The original project provided the foundation, while this version contains my own modifications, fixes, visual redesign, customization, content, mobile adaptation, and deployment.
 
 The original repository and its respective authors retain ownership of their original code and assets. This repository represents my customized version and the work I performed on top of that foundation.
 
@@ -261,6 +283,6 @@ Please check the original project's license and the licenses of any third-party 
 
 ---
 
-### 🎂 Made with code, debugging, and a lot of love.
+### 🎂 Made with code, design, debugging, and a lot of love.
 
 **Happy Birthday, Sarro! ❤️**
