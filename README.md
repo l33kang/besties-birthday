@@ -4,8 +4,6 @@ A small interactive birthday game and mobile app that I created as a personal bi
 
 The project started from an existing Phaser 3 HTML5 game project. I customized and extended the original project, fixed issues, redesigned the main character, added my own content and assets, and created my own version of the birthday experience.
 
-🌐 **Live Web Version:** https://hb-sarro-server.onrender.com/
-
 ---
 
 ## 📖 About the Project
