@@ -53,18 +53,6 @@ Starting from the original Phaser 3 project, I:
 
 ---
 
-## 🌐 Live Demo
-
-The web version is available here:
-
-**https://hb-sarro-server.onrender.com/**
-
-Open it in a browser and enjoy the birthday game.
-
----
-
-## 🚀 Running the Project Locally
-
 ### 1. Clone the repository
 
 ```bash
